@@ -12,18 +12,22 @@ As of now it currently consists of:
 The plan for the web player is to use [LiquidFun](https://github.com/google/liquidfun) by Google for the Physics calculations and possibly THREE.js for the rendering. LiquidFun is an extension of the Box2D physics engine and comes in an EmScripten compiled version for javascript.
 
 ### Player examples:
-   + [Car](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=car.phz)
+   + [Car](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=car.phz) (Control car with A, D)
    + [Tramboline](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=tramboline.phz)
-   + [Trebuchet](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=Trebuchet.phz)
+   + [Trebuchet](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=Trebuchet.phz) (Press keys 1, 2, 3)
    + [Raining men](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=rainingmen.phz)
    + [Brick wall](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=BrickWallTest.phz)
+   + [Gears](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=BrickWallTest.phz) (Broken because of polygon handling... To be fixed)
 
 
-##TODOs
+## TODOs
 
 ### Web player
    + Implementations of Scene.* and other core calls.
    + Springs
+   + Thrusters
+   + Water
+   + Better polygon support
    + Events & Thyme Scripting
    + Texture rendering mode
    + Sky & cloud
@@ -37,3 +41,7 @@ The plan for the web player is to use [LiquidFun](https://github.com/google/liqu
    + Scene to HTML converter tool (CLI)
    + Online scene player (User "uploads"  own scenes) (Works, but WIP)
    + THREE.js+liquidfun template with phz support.
+
+## Links
++ [Phun-js-box2d github page](http://ejth.github.com/phun-js-box2d)
++ [Algodoo](http://algodoo.com);
