@@ -17,7 +17,7 @@ The plan for the web player is to use [LiquidFun](https://github.com/google/liqu
    + [Trebuchet](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=Trebuchet.phz) (Press keys 1, 2, 3)
    + [Raining men](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=rainingmen.phz)
    + [Brick wall](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=BrickWallTest.phz)
-   + [Gears](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=BrickWallTest.phz) (Broken because of polygon handling... To be fixed)
+   + [Gears](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=gears.phz) (Broken because of polygon handling... To be fixed)
 
 
 ## TODOs
@@ -27,6 +27,7 @@ The plan for the web player is to use [LiquidFun](https://github.com/google/liqu
    + Springs
    + Thrusters
    + Water
+   + Breakables
    + Better polygon support
    + Events & Thyme Scripting
    + Texture rendering mode
@@ -43,5 +44,5 @@ The plan for the web player is to use [LiquidFun](https://github.com/google/liqu
    + THREE.js+liquidfun template with phz support.
 
 ## Links
-+ [Phun-js-box2d github page](http://ejth.github.com/phun-js-box2d)
-+ [Algodoo](http://algodoo.com);
++ [Phun-js-box2d github page](http://github.com/ejth/phun-js-box2d)
++ [Algodoo](http://algodoo.com)
