@@ -18,6 +18,10 @@ The plan for the web player is to use [LiquidFun](https://github.com/google/liqu
    + [Raining men](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=rainingmen.phz)
    + [Brick wall](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=BrickWallTest.phz)
    + [Gears](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=gears.phz) (Broken because of polygon handling... To be fixed)
+   + [Water](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=water.phz)
+   + [Water glass](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=waterglass.phz)
+   + [Water bottle rocket](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=rocket.phz)
+
 
 
 ## TODOs
