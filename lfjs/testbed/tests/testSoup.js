@@ -14,7 +14,7 @@ function TestSoup() {
 
 
   shape = new b2PolygonShape;
-  shape.vertices.push(new b2Vec2(-4, -0.1));
+  shape.vertices.push(new b2Vec2(-9, -0.1));
   shape.vertices.push(new b2Vec2(-2, -0.1));
   shape.vertices.push(new b2Vec2(-2, 2));
   shape.vertices.push(new b2Vec2(-4, 3));

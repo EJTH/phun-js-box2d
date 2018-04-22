@@ -243,5 +243,4 @@ EXPORTS = EXPORTED_FUNCTIONS="[ \
 	]"
 
 bindings.js:
-	$(EMSCRIPTEN)/emcc -I../ -o lf_core.js jsBindings/jsBindings.cpp $(OBJECTS) -s $(EXPORTS) -s TOTAL_MEMORY=33554432 -O2 --js-library callbacks.js
-
+	$(EMSCRIPTEN)/emcc -I../ -o lf_core.js jsBindings/jsBindings.cpp $(OBJECTS) -s $(EXPORTS) -s ASSERTIONS=1  -s TOTAL_MEMORY=33554432 -O0 --js-library callbacks.js
