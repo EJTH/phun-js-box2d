@@ -11,6 +11,15 @@ As of now it currently consists of:
 ## HTML5 Algodoo scene viewer/player
 The plan for the web player is to use [LiquidFun](https://github.com/google/liquidfun) by Google for the Physics calculations and possibly THREE.js for the rendering. LiquidFun is an extension of the Box2D physics engine and comes in an EmScripten compiled version for javascript.
 
+### Player features
+  - Drag & drop .phz files to load (Client side)
+  - Hinges, springs (wip)
+  - water
+  - Complex polygons
+  - Circles, rectangles
+  - Hinges, Motors (Controlled)
+  - Fixate joins (wip)
+
 ### Player examples:
    + [Car](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=car.phz) (Control car with A, D)
    + [Tramboline](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=tramboline.phz)
@@ -22,30 +31,27 @@ The plan for the web player is to use [LiquidFun](https://github.com/google/liqu
    + [Water glass](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=waterglass.phz)
    + [Water bottle rocket](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=rocket.phz)
 
-
+## ThymeScript parser and Transpiler
+  For info on using the Thyme parser and transpiler, take a look at the unit tests provided. and also reference the documentation for PEG.js
 
 ## TODOs
 
 ### Web player
-   + Implementations of Scene.* and other core calls.
-   + Springs
+   + (Proper) Springs
    + Thrusters
-   + Water
    + Breakables
-   + Better polygon support
    + Events & Thyme Scripting
-   + Texture rendering mode
+   + Textured and solid rendering mode
    + Sky & cloud
+   + Killers and Immortalss
+   + Air friction
+   + Wind (Probably never going to do this!)
    + Controls (wip)
    + Phun drag&drop support in player
 
-### Scene parser
-   ???
-
 ### Greater scheme
    + Scene to HTML converter tool (CLI)
-   + Online scene player (User "uploads"  own scenes) (Works, but WIP)
-   + THREE.js+liquidfun template with phz support.
+   + THREE.js+liquidfun template with phz scene support.
 
 ## Links
 + [Phun-js-box2d github page](http://github.com/ejth/phun-js-box2d)
