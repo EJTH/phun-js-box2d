@@ -11,6 +11,9 @@ As of now it currently consists of:
 ## HTML5 Algodoo scene viewer/player
 The plan for the web player is to use [LiquidFun](https://github.com/google/liquidfun) by Google for the Physics calculations and possibly THREE.js for the rendering. LiquidFun is an extension of the Box2D physics engine and comes in an EmScripten compiled version for javascript.
 
+## Instructions
+Go to the [phun-js-webplayer](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=dragndrop.phz) drag and drop your algodoo scene into the browser. Thats it!
+
 ### Player features
   - Drag & drop .phz files to load (Client side)
   - Hinges, springs (wip)
@@ -19,6 +22,7 @@ The plan for the web player is to use [LiquidFun](https://github.com/google/liqu
   - Circles, rectangles
   - Hinges, Motors (Controlled)
   - Fixate joins (wip)
+  - Camera follow
 
 ### Player examples:
    + [Car](https://ejth.github.io/phun-js-box2d/lib/player/index.html?scene=car.phz) (Control car with A, D)
@@ -35,6 +39,9 @@ The plan for the web player is to use [LiquidFun](https://github.com/google/liqu
   For info on using the Thyme parser and transpiler, take a look at the unit tests provided. and also reference the documentation for PEG.js
 
 ## TODOs
+   + Fix complex polygons (Earclipping!)
+   + Fix emscripten compilation (enable optimizations and fix particles!)
+   +
 
 ### Web player
    + (Proper) Springs

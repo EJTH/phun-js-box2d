@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pegjs --format globals --export-var PhunParser -o lib/player/parser.js lib/parser.pegjs && pegjs --trace lib/parser.pegjs",
+    "build": "pegjs --format globals --export-var PhunParser -o src/player/parser.js src/parser.pegjs && pegjs --trace src/parser.pegjs",
+    "build-lfjs": "",
     "test": "./node_modules/mocha/bin/mocha"
   },
   "author": "",

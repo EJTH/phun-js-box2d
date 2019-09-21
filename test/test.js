@@ -86,6 +86,7 @@ describe('Scene parser', function() {
   describe("Scene call parsing", function(){
     var parsed = parse(`
       Scene.addPlane {
+        nullnumber := 0.00000;
         integer := 1;
         float := 60.000;
         enotation := 9.9999997e-005;
@@ -101,6 +102,9 @@ describe('Scene parser', function() {
 
 
     var props = parsed[0].arguments;
+    it("0.00000 floats", function(){
+      assert.equal(props.nullnumber, 0);
+    })
     it("integers", function(){
       assert.equal(props.integer,1)
     })
@@ -219,6 +223,8 @@ describe('Thyme -> JS Transpiler test snippets', function(){
 `.replace(/(\n| )+/g,' '), 2001);
 
   testFunc("(e)=>{ 2*1%2 }",0);
+
+  testFunc("(e)=>{ 0.00000000; }",0);
 
   describe('Thyme array ops', function(){
     testFunc("(e)=>{ [1,2]+[1,2]; }", [2,4]);

@@ -1,13 +1,12 @@
-const parser = require('./lib/parser');
-const transpiler = require('./lib/thyme-transpiler');
-const runtime = require('./lib/thyme-runtime');
+const parser = require('./src/parser');
+const transpiler = require('./src/thyme-transpiler');
+const runtime = require('./src/thyme-runtime');
 
 function parse(data){
   try {
     var tracer = new Tracer(data);
     return parser.parse(data, { tracer : tracer });
   } catch(e){
-    console.log(tracer.getBacktraceString());
     throw e;
   }
 }
